@@ -1,4 +1,31 @@
 import streamlit as st
+# ================================
+# 🎨 Background & Tema
+# ================================
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: ("pink","biru");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .block-container {
+        background-color: rgba(255, 255, 255, 0.88);
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h1, h2, h3, h4, h5, h6, p, label, .markdown-text-container {
+        color: #004d40;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # ================================
 # ⚙️ Konfigurasi Halaman
