@@ -6,7 +6,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: ("pink","biru");
+        background-image: ("https://www.canva.com/design/DAGuXyiAz_U/WOkgDGQCjCPpZ0Wgo6HRSQ/edit?ui=eyJEIjp7IlEiOnsiQSI6dHJ1ZX19LCJBIjp7fX0");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
