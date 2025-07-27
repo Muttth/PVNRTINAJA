@@ -1,0 +1,27 @@
+import streamlit as st
+import base64
+
+# Fungsi konversi gambar ke base64
+def get_base64(file_path):
+    with open(file_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+# Fungsi untuk atur background
+def set_background(image_path):
+    encoded = get_base64(image_path)
+    css = f"""
+    <style>
+    .stApp {{
+        background-image: url("data:image/jpg;base64,{encoded}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }}
+    </style>
+    """
+    st.markdown(css, unsafe_allow_html=True)
+
+# Panggil fungsi di awal halaman
+set_background("https://www.canva.com/design/DAGuXyiAz_U/WOkgDGQCjCPpZ0Wgo6HRSQ/edit?ui=eyJEIjp7IlEiOnsiQSI6dHJ1ZX19LCJBIjp7fX0")
+# 
