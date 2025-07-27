@@ -6,9 +6,10 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: ("https://www.canva.com/design/DAGuXyiAz_U/WOkgDGQCjCPpZ0Wgo6HRSQ/edit?ui=eyJEIjp7IlEiOnsiQSI6dHJ1ZX19LCJBIjp7fX0");
-        background-size: cover;
+        background-color: #A8E6CF;
+        background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
         background-attachment: fixed;
     }
 
@@ -20,7 +21,7 @@ st.markdown(
     }
 
     h1, h2, h3, h4, h5, h6, p, label, .markdown-text-container {
-        color: #004d40;
+        color: #004d40; /* biru dam merah muda */
     }
     </style>
     """,
